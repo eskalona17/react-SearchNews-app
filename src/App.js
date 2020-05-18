@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Formulario from "./components/Formulario";
+import ListadoNoticias from "./components/ListadoNoticias";
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
       <Header titulo="Buscador de noticias" />
       <div className="container white">
         <Formulario guardarCategoria={guardarCategoria}/>
+        <ListadoNoticias noticias={noticias}/>
       </div>
     </>
   );
